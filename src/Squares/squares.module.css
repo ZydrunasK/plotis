@@ -1,0 +1,10 @@
+.sqr {
+    width: 3rem;
+    height: 3rem;
+    border: 3px solid black;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}

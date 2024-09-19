@@ -1,15 +1,18 @@
+import { Squares } from '../../Squares/Squares';
 import { Button } from '../buttons/Button';
 import s from './main.module.css';
 
 export function Main() {
+
+    
     return (
         <main className={s.main} >
             <section className={`${s.container} ${s.border}`}>
                 <div className={`${s.plotis} ${s.border}`}>
                     <p>Plotis</p>
-                    <Button text={'+'}/>
-                    <span className={s.span}>1</span>
                     <Button text={'-'}/>
+                    <span className={s.span}>1</span>
+                    <Button text={'+'}/>
                 </div>
                 <div className={`${s.aukstis} ${s.border}`}>
                         <p>Aukštis</p>
@@ -18,6 +21,7 @@ export function Main() {
                         <Button text={'-'}/>
                 </div>
                 <div className={`${s.lenta} ${s.border}`}>
+                    <Squares />
                 </div>
             </section>
         </main>

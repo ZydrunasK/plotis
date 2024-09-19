@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import s from './button.module.css';
 
 

@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import s from './squares.module.css';
 import { GlobalContext } from '../../context/GlobalContext';
 

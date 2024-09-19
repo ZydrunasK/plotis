@@ -4,21 +4,20 @@ import s from './main.module.css';
 export function Main() {
     return (
         <main className={s.main} >
-            <section className={s.container}>
-                <div className={s.plotis}>
+            <section className={`${s.container} ${s.border}`}>
+                <div className={`${s.plotis} ${s.border}`}>
                     <p>Plotis</p>
                     <Button text={'+'}/>
-                    <span></span>
+                    <span className={s.span}>1</span>
                     <Button text={'-'}/>
                 </div>
-                <div className={s.aukstis}>
-                    <p>Aukštis</p>
-                    <Button text={'+'}/>
-                    <span></span>
-                    <Button text={'-'}/>
+                <div className={`${s.aukstis} ${s.border}`}>
+                        <p>Aukštis</p>
+                        <Button text={'+'}/>
+                        <span className={s.span}>1</span>
+                        <Button text={'-'}/>
                 </div>
-                <div className={s.lenta}>
-        
+                <div className={`${s.lenta} ${s.border}`}>
                 </div>
             </section>
         </main>

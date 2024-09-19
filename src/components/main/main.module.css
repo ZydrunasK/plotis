@@ -4,23 +4,39 @@
     align-items: center;
     padding: 1rem;
 }
+.border {
+    border: 3px solid #313131;
+    padding: 1.5rem;
+    gap: 2.5rem;
+}
 .container {
     width: 95%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     gap: 1.5rem;
-    padding: 1.5rem;
-    border: 3px solid #313131;
+    font-size: 2rem;
 }
 .plotis {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    width: 90%;
-    gap: 1.5rem;
-    padding: 1.5rem;
-    border: 3px solid #313131;
+    width: 100%;
+    margin-left: calc(150px + 1.5rem);
+}
+.aukstis{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 65vh;
+    width: 150px;
+}
+.lenta {
+    display: flex;
+    flex: auto;
+    min-height: 65vh;
+    gap: 0.3rem;
 }
 

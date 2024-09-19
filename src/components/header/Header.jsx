@@ -1,11 +1,16 @@
+import { useContext } from 'react';
 import s from './header.module.css';
+import { GlobalContext } from '../../context/GlobalContext';
 
 export function Header() {
+
+    const {numOfCol, numOfSqr} = useContext(GlobalContext);
+
     return (
         <header className={s.header}>
             <div className={s.container}>
-                <p className={s.txt}>Plotas: 4m x 4m = 16m2</p>
-                <p className={s.txt}>Iš kurių 4m2 užimta</p>
+                <p className={s.txt}>Plotas: {numOfCol} x {numOfSqr} = {numOfCol * numOfSqr}m&sup2;</p>
+                <p className={s.txt}>Iš kurių 4m&sup2; užimta</p>
             </div>
         </header>
     )

@@ -2,9 +2,14 @@
 .col {
     display: flex;
     flex-direction: column;
+    gap: 0.3rem;
 }
-.row {
+.sqr {
     height: 3rem;
     width: 3rem;
-    border: 3px solid black;
+    gap: 0.3rem;
+    border: 3px solid #313131;
+}
+.sqrA {
+    background-color: purple;
 }

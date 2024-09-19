@@ -7,7 +7,6 @@ export const initialContext = {
     removeCol: () => {},
     addSqr: () => {},
     removeSqr: () => {},
-    click: () => {},
 }
 
 
@@ -20,22 +19,24 @@ export function ContextWrapper(props) {
     const [numOfCol, setNumOfCol] = useState(initialContext.numOfCol);
     const [numOfSqr, setNumOfSqr] = useState(initialContext.numOfSqr);
     
-
-    function click() {
-        console.log('asdfasdfas');
-    }
     function addCol() {
-        setNumOfCol(pre => pre + 1)
+        setNumOfCol(pre => pre + 1);
+        console.log(numOfCol);
+        
     }
     function removeCol() {
-        setNumOfCol(pre => pre - 1)
+        setNumOfCol(pre => pre === 1 ? pre : pre -1);
     }
     function addSqr() {
-        setNumOfSqr(pre => pre + 1)
+        setNumOfSqr(pre => pre + 1);
+        console.log(numOfSqr);
+        
     }
     function removeSqr() {
-        setNumOfSqr(pre => pre - 1)
+        setNumOfSqr(pre => pre === 1 ? pre : pre -1);
+        console.log(numOfSqr);
     }
+    
 
 
 
@@ -47,7 +48,6 @@ export function ContextWrapper(props) {
         removeCol,
         addSqr,
         removeSqr,
-        click,
     }
 
     return (

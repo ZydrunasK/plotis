@@ -2,12 +2,13 @@ import { useContext } from 'react';
 import { Button } from '../buttons/Button';
 import s from './main.module.css';
 import { GlobalContext } from '../../context/GlobalContext';
+import { Squares } from '../squares/Squares';
 
 export function Main() {
 
-    const { addCol, removeCol, removeSqr, addSqr, numOfCol, numOfSqr, click } = useContext(GlobalContext);
+    const { addCol, removeCol, removeSqr, addSqr, numOfCol, numOfSqr } = useContext(GlobalContext);
     return (
-        <main className={s.main} onClick={click}>
+        <main className={s.main}>
             <section className={`${s.container} ${s.border}`}>
                 <div className={`${s.plotis} ${s.border}`}>
                     <p>Plotis</p>
@@ -22,7 +23,7 @@ export function Main() {
                         <Button text={'-'} onClick={removeSqr}/>
                 </div>
                 <div className={`${s.lenta} ${s.border}`}>
-
+                    <Squares />
                 </div>
             </section>
         </main>

@@ -1,3 +1,4 @@
+import { Button } from '../buttons/Button';
 import s from './main.module.css';
 
 export function Main() {
@@ -6,15 +7,15 @@ export function Main() {
             <section className={s.container}>
                 <div className={s.plotis}>
                     <p>Plotis</p>
-                    <button>+</button>
+                    <Button text={'+'}/>
                     <span></span>
-                    <button>-</button>
+                    <Button text={'-'}/>
                 </div>
                 <div className={s.aukstis}>
                     <p>Aukštis</p>
-                    <button>+</button>
+                    <Button text={'+'}/>
                     <span></span>
-                    <button>-</button>
+                    <Button text={'-'}/>
                 </div>
                 <div className={s.lenta}>
         

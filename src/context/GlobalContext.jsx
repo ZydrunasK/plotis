@@ -27,16 +27,17 @@ export function ContextWrapper(props) {
     function data(e) {
         let dataActive = (e.target.getAttribute('data-active') === 'false'? 'true' : 'false');
         e.target.setAttribute('data-active', dataActive);
-        num = num + (dataActive === 'true' ? 1 : -1);
+        num += (dataActive === 'true' ? 1 : -1);
+        console.log(num);  
     }
     function addCol() {
-        return setNumOfCol(pre => pre + 1); 
+        return setNumOfCol(pre => pre +1); 
     }
     function removeCol() {
         return setNumOfCol(pre => pre === 1 ? pre : pre -1);
     }
     function addSqr() {
-        return setNumOfSqr(pre => pre + 1);  
+        return setNumOfSqr(pre => pre +1);  
     }
     function removeSqr() {
         return setNumOfSqr(pre => pre === 1 ? pre : pre -1);

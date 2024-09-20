@@ -9,7 +9,8 @@
     padding: 1.5rem;
     gap: 2.5rem;
 }
-.container {
+.container,
+.aukstLenta {
     width: 95%;
     display: flex;
     flex-wrap: wrap;
@@ -25,6 +26,12 @@
     width: 100%;
     margin-left: calc(150px + 1.5rem);
 }
+.aukstLenta {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
 .aukstis{
     display: flex;
     flex-direction: column;
@@ -38,6 +45,6 @@
     flex: auto;
     min-height: 65vh;
     gap: 0.3rem;
+    background-color: whitesmoke;
 }
-
 
